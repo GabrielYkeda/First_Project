@@ -6,19 +6,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Cadastro | Biblioteca</title>
+    <title>Formulario | vai da tudo certo,confia</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Ohayo</h1>
-    <div class="DIVIDENDO">
-        <form action="" id="formulario" method="POST" name="formulario">
-            <label>opa camarada</label>
-            <input placeholder="Digite seu nome " id="name"/>
-        </form>
-    </div>
+    <form action="" id="formulario" method="POST">
+        <h1>Formulario</h1>
+        <fieldset>
+            <div class="formulario">
+                <label>nome completo</label>
+                <input placeholder="Digite seu nome" id="name" />
+            </div>
+            <div class="formulario">
+                <label>e-mail</label>
+                <input placeholder="Digite seu email" id="email" />
+            </div>
+            <div class="formulario">
+                <label>senha</label>
+                <input placeholder="Digite sua senha" id="senha" />
+            </div>
+            <div class="formulario">
+                <label>Telefone</label>
+                <input placeholder="Digite seu telefone" id="telefone" onkeypress="mask(this,cheetos)" onblur="mask(this,cheetos)" />
+            </div>
+            <div class="formulario">
+                <label>CEP</label>
+                <input placeholder="Digite seu CEP" id="cep" onblur="buscacep(this.value)"/>
+            </div>
+            <div class="formulario">
+                <label>Rua</label>
+                <input placeholder="Digite sua rua" id="rua" />
+            </div>
+            <div class="formulario">
+                <label>Bairro</label>
+                <input placeholder="Digite seu bairro" id="bairro" />
+            </div>
+            <div class="formulario">
+                <label>Cidade</label>
+                <input placeholder="Digite sua cidade" id="cidade" />
+            </div>
+            <div class="formulario">
+                <label>Estado</label>
+                <input placeholder="Digite seu estado" id="estado" />
+            </div>
+            <div class=" formulario">
+                <label>Sexo</label>
+                <select id="sexo">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Feminino</option>
+                    <option>Masculino</option>
+                    <option>outro</option>
+                    <option>Digimon</option>
+                    <option>BUlbasauro</option>
+                    <option>LUla</option>
+                    <option>Bolsonaro</option>
+
+            </div>
+            <div class="formulario">
+                <label>
+                    <input type="radio"/>
+                    Deseja receber novas informações?
+                </label>
+                <button type="button" onclick="validar()">Enviar</button>
+            </div>
+            </fieldste>
+    </form>
     <script type="text/javascript" src="index.js"></script>
 
 </body>
